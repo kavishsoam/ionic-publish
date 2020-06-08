@@ -8,7 +8,7 @@ import { IonInfiniteScroll } from '@ionic/angular';
 })
 export class RegisterPage implements OnInit {
 
-  @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
+  @ViewChild(IonInfiniteScroll,{static:true}) infiniteScroll: IonInfiniteScroll;
 
   card: any;
   constructor() { }
